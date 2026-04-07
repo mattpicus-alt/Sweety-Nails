@@ -3,21 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #e08da0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        section {
+            margin-top: 70px;
+            padding: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f7f7f7;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .service {
+            background: #fff;
+            border: 1px solid #e08da0;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            flex: 0 0 30%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .gallery img {
+            width: 30%;
+            margin: 10px;
+        }
+        .testimonials {
+            background: #f7f7f7;
+            padding: 20px;
+        }
+        .contact {
+            text-align: center;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #e08da0;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .service, .gallery img {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
     <title>Sweety Nails</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to Sweety Nails</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section>
-            <p>Your one-stop destination for beautiful nails.</p>
-        </section>
-    </main>
+
+    <section id="hero" class="hero">
+        <h1>Beauté des ongles et du regard</h1>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">Ongles gel</div>
+            <div class="service">Semi permanent</div>
+            <div class="service">Capsules</div>
+            <div class="service">Nail art</div>
+            <div class="service">Beauté des pieds</div>
+            <div class="service">Extensions de cils</div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <img src="image1.jpg" alt="Gallery Image 1">
+        <img src="image2.jpg" alt="Gallery Image 2">
+        <img src="image3.jpg" alt="Gallery Image 3">
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <p>"Best nail service ever! Highly recommend." - Client A</p>
+        <p>"Fantastic experience, I love my nails!" - Client B</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345097685!2d144.95373531531812!3d-37.816279279751254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11ff31%3A0x5045675218ce7a0!2sYour%20Business%20Address!5e0!3m2!1sen!2sau!4v161maZl8Ld0" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br>
+        <a href="https://wa.me/yourWhatsAppNumber" target="_blank">Contact us on WhatsApp</a>
+    </section>
+
     <footer>
-        <p>&copy; 2026 Sweety Nails</p>
-        <p>Current Date and Time (UTC): 2026-04-07 18:30:05</p>
-        <p>Logged in as: mattpicus-alt</p>
+        <p>&copy; 2026 Sweety Nails. All rights reserved.</p>
     </footer>
 </body>
 </html>
